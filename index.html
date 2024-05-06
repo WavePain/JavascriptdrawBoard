@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Spck!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
+</head>
+
+<body id="bdy" class="modal-open">
+
+
+<button class="brushSize" 
+id="decrease">-</button>
+
+<button class="brushSize" 
+id="increase">+</button>
+
+<div class="trail-options">
+  
+<input type="checkbox" name="keepTrail" id="keepTrail" checked="false">
+<label id="l1" 
+for="keepTrail">Keep Trail</label>
+
+<input type="checkbox" name="flatColor" id="flatColor">
+<label id="l2" 
+for="flatColor">Flat color</label>
+
+<button id="modalBtn" >
+  Custom Color
+</button>
+
+<p id="hidHx"></p>
+</div>
+
+<div class="backdrop" id="bckDrp">
+</div>
+
+<div 
+class="modal-container" id="modal">
+  
+  <span id="closeModal">&times</span>
+  
+   <div class="color" id="color"></div>
+   
+   <div class="container">
+     
+     <span class="minV">0</span>
+     <input type="range" id="red" 
+     value="0" min="0" max="255" class="range" />
+     <span class="maxV">255</span>
+     <span id="redValue" class="value"></span>
+  
+     <br /><span class="minV">0</span>
+     <input type="range" id="green" value="0" min="0" max="255" class="range" />
+     <span class="maxV">255</span>
+     <span id="greenValue" class="value"></span>
+  
+     <br /><span class="minV">0</span>
+     <input type="range" id="blue" value="0" min="0" max="255" class="range" />
+     <span class="maxV">255</span>
+     <span id="blueValue" class="value"></span>
+     <p id="hexClr"></p>
+   </div>
+  
+</div>
+
+  <script src="modal.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

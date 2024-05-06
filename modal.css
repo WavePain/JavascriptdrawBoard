@@ -1,0 +1,89 @@
+body {
+  font-size: 15pt;
+  background-color: #323232;
+}
+
+/* Modal styles */
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 25px;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  overflow: auto;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+/* Range input styles */
+.range {
+  appearance: none;
+  -moz-appearance: none;
+  margin-top: 30px;
+  width: 170px;
+  height: 20px;
+  border-radius: 80px;
+  background-color: #000000;
+}
+
+.container {
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding-bottom: 26px;
+  background-color: #272835;
+  color: white;
+  border-radius: 15px;
+}
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Thumb color based on slider */
+#red::-webkit-slider-thumb {
+  background-color: red;
+}
+
+#blue::-webkit-slider-thumb {
+  background-color: blue;
+}
+
+#green::-webkit-slider-thumb {
+  background-color: green;
+}
+
+/* Value display styles */
+.minV, .maxV {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.color {
+  border: 2px solid black;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  background-color: #7D7E86B8;
+}
+
+.value {
+  margin-left: 20px;
+}
